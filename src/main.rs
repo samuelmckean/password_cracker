@@ -1,3 +1,5 @@
+mod md5;
+
 fn main() {
-    println!("Hello, world!");
+    md5::compute(0);
 }
