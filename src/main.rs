@@ -1,5 +1,6 @@
-mod md5;
+use md5;
 
 fn main() {
-    md5::compute(0);
+    let digest = md5::compute(b"hello world");
+    println!("{}", format!("{:x}", digest));
 }
